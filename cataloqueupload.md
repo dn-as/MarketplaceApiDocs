@@ -1,3 +1,7 @@
+layout: page
+title: "API Catalogue Uploads"
+permalink: /cataloqueupload/
+
 ## API Catalogue Uploads
 
 Used to upload bulk data about vendor products to the DNAS marketplace.
