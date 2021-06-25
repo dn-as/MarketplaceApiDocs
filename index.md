@@ -1,4 +1,7 @@
 ## API Catalogue Uploads
+
+Used to upload bulk data about vendor products to the DNAS marketplace.
+
 **Request URL**: [https://products-daynite.dnasmarketplace.com/bulkUpload/catlog-upload](https://products-daynite.dnasmarketplace.com/bulkUpload/catlog-upload)
 **API HTTP request method**: POST
 
