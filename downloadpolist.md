@@ -85,4 +85,4 @@ axios(config)
 });
 
 ```
-### Example of successful request response: 
+### Example of successful request response: [Example PO List XML File](https://dn-as.github.io/MarketplaceApiDocs/downloadpolistexample.xml)
