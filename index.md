@@ -7,6 +7,7 @@ Used to upload bulk data about vendor products to the DNAS marketplace.
 **API HTTP request method**: POST
 
 ### Required Headers
+
 Content-Type: **multipart/form-data**
 
 Authorization: **Bearer *TOKEN***
