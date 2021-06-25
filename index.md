@@ -13,7 +13,7 @@ Content-Type: **multipart/form-data**
 Authorization: **Bearer *TOKEN*** 
 
 - *TOKEN* is retrieved through authorization API call using vendor account username and password
-- Auth API Docs: https://punchout-daynite.dnasmarketplace.com/api-docs/
+-  Auth API Docs: https://punchout-daynite.dnasmarketplace.com/api-docs/
 
 ### Required Body
 **file_type**: values 0, 1, 2
