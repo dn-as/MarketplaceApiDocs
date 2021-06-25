@@ -10,7 +10,7 @@ Used to upload bulk data about vendor products to the DNAS marketplace.
 
 Content-Type: **multipart/form-data**
 
-Authorization: **Bearer *TOKEN***
+Authorization: **Bearer *TOKEN*** 
 
 - *TOKEN* is retrieved through authorization API call using vendor account username and password
 - Auth API Docs: https://punchout-daynite.dnasmarketplace.com/api-docs/
