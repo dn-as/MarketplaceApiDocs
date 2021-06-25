@@ -34,7 +34,7 @@ None
 ```
 <?php
 
-$curl = curl_init();
+$curl = curl_init(); 
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://products-daynite.dnasmarketplace.com/bulkUpload/catlog-upload',
