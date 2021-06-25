@@ -75,4 +75,30 @@ axios(config)
 });
 
 ```
+### CSV File Columns
+| Column name 	|
+|--						|
+|	product_name							|
+|	manufacturer_name					|
+|	manufacturer_part_number		|
+|	vendor_part_number				|
+|	quantity_on_hand						|
+|	list_price		|
+|	discounted_price		|
+|	lead_time		|
+|	fits_models		|
+|	specifications		|
+|	long_description		|
+|	uom_name		|
+|	uom_quantity		|
+|	web_link		|
+|	url_image		|
+|	minimum_ship_quantity		|
+|	coo		|
+|	coo_name		|
+|	segment		|
+|	family		|
+|	unspsc		|
+|	in_stock		|
+|	product_images		|
 
