@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "API Download Purchase Orders"
 permalink: /downloadpo/
 ---
