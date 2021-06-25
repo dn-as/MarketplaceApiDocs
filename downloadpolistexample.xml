@@ -1,0 +1,51 @@
+<PoList>
+	<ns1:purchaseOrder DateRequested="2019-10-07" Branch="ExampleBranch">
+		<ns1:PONumber>123456</ns1:PONumber>
+		<ns1:jobnumber />
+		<ns1:workordernumber>123456</ns1:workordernumber>
+		<ns1:PODescription>Purchase for WO# 123456</ns1:PODescription>
+		<ns1:PurchaseOrderType>Purchase</ns1:PurchaseOrderType>
+		<ns1:OrderedBy>Marketplace</ns1:OrderedBy>
+		<ns1:comment />
+		<ns1:shipTo country="US">
+			<ns1:ShipAddressStreet1>DAY &amp; NITE REFRIGERATION</ns1:ShipAddressStreet1>
+			<ns1:ShipAddressStreet2>10 CHARLES STREET</ns1:ShipAddressStreet2>
+			<ns1:ShipAddressStreet3 />
+			<ns1:ShipAddressStreet4 />
+			<ns1:ShipAddressCity>NEW HYDE PARK</ns1:ShipAddressCity>
+			<ns1:ShipAddressState>NY</ns1:ShipAddressState>
+			<ns1:ShipAddressPostalCode>11040</ns1:ShipAddressPostalCode>
+			<ns1:ShipToCode>StockLocation</ns1:ShipToCode>
+			<ns1:ShipToBranch />
+		</ns1:shipTo>
+		<ns1:items>
+			<item>
+				<ns1:Quantity>2</ns1:Quantity>
+				<ns1:UnitOfMeasure>EA</ns1:UnitOfMeasure>
+				<ns1:UnitPrice>2.000</ns1:UnitPrice>
+				<ns1:BuyerPartNumber>ABCC</ns1:BuyerPartNumber>
+				<ns1:SellerPartNumber>ABCC2</ns1:SellerPartNumber>
+				<ns1:ItemDescription>1234567</ns1:ItemDescription>
+				<ns1:JobId />
+				<ns1:WorkOrder />
+				<ns1:CostCode />
+				<ns1:CostCategory />
+				<ns1:BillingItem />
+			</item>
+			<item>
+				<ns1:Quantity>1</ns1:Quantity>
+				<ns1:UnitOfMeasure>AE</ns1:UnitOfMeasure>
+				<ns1:UnitPrice>1.000</ns1:UnitPrice>
+				<ns1:BuyerPartNumber>YYYX4</ns1:BuyerPartNumber>
+				<ns1:SellerPartNumber>YYYX4</ns1:SellerPartNumber>
+				<ns1:ItemDescription>LAMP-40W 130V CTD</ns1:ItemDescription>
+				<ns1:JobId />
+				<ns1:WorkOrder />
+				<ns1:CostCode />
+				<ns1:CostCategory />
+				<ns1:BillingItem />
+			</item>
+		</ns1:items>
+	</ns1:purchaseOrder>
+	.... More Purchase 
+</PoList>
