@@ -18,9 +18,11 @@ Authorization: **Bearer *TOKEN***
 ### Required Body
 **file_type**: values 0, 1, 2
 
- 0. Remove all existing products and add new products
- 1. Update existing product records
- 2. Insert new products without replacing existing products
+ 0 - Remove all existing products and add new products
+
+ 1 - Update existing product records
+
+ 2 - Insert new products without replacing existing products
 
 
 
@@ -86,7 +88,7 @@ axios(config)
 ### CSV File Columns and sample file
 
 [Sample File](https://dn-as.github.io/MarketplaceApiDocs/product_sample_file.csv)
-
+ 
 | Column name 	|
 |--						|
 |	product_name							|
