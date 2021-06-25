@@ -76,7 +76,9 @@ axios(config)
 
 ```
 ### CSV File Columns and sample file
+
 [Sample File](https://dn-as.github.io/MarketplaceApiDocs/product_sample_file.csv)
+
 | Column name 	|
 |--						|
 |	product_name							|
