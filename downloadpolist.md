@@ -1,23 +1,9 @@
 
-
-
-
-
-
-
-
-
-
-
 ---
-
-layout: default
-
-title: "API Download Purchase Orders"
-
-permalink: /downloadpo/
-
----
+title: downloadpolist
+layout: template
+filename: downloadpolist.md
+--- 
 
 ## API Download Purchase Orders
 
