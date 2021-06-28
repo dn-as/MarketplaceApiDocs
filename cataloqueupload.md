@@ -1,18 +1,16 @@
-
 <!--
 
 ---
 
-layout: page
+layout: template
 
-title: "API Catalogue Uploads"
+title: downloadpolist
 
-permalink: /cataloqueupload/
+filename: downloadpolist.md
 
----
+--- 
 
 -->
-
 
 ## API Catalogue Uploads
 
