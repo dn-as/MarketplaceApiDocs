@@ -131,6 +131,8 @@ None
 ```
 ### Minimum required cXML element data
 
+Provide your Marketplace login ID in "Sender Identity" field and Marketplace Password in "Shared Secret" field.
+
 |Marketplace OA Columns| Manual Upload CSV columns|  API upload cXML Elements&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 |--|--|--|
 | Vendor Part	|	ns1:vendornumber	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemID>\<SupplierPartID>	|
@@ -145,17 +147,23 @@ There can be more than one ConfirmationItem as a line item on the purchase order
 ### Node.js AXIOS Example
 ```
 var axios = require('axios');
-var data = JSON.stringify({
-  "status": "",
-  "created_on": ""
+var fs = require('fs')
+
+fs.readFile('/path/to/file.cXML', 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  cXMLContent = data;
 });
+
+
+var data = cXMLContent;
 
 var config = {
   method: 'post',
-  url: 'https://api-daynite.dnasmarketplace.com/v1/cart/downloadpolist',
+  url: 'https://api-daynite.dnasmarketplace.com/v1/xmlParser/xmlOAToDatabase',
   headers: { 
-    'Content-Type': 'application/json', 
-    'Authorization': 'Bearer TOKEN'
+    'Content-Type': 'text/xml'
   },
   data : data
 };
@@ -168,5 +176,37 @@ axios(config)
   console.log(error);
 });
 
+
 ```
 
+### PHP Curl Example
+
+```
+<?php
+
+$curl = curl_init();
+
+$cxmlcontent = file_get_contents('/path/to/file.cXML');
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api-daynite.dnasmarketplace.com/v1/xmlParser/xmlOAToDatabase',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS => $cxmlcontent,
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: text/xml'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+
+```
