@@ -140,7 +140,7 @@ None
 | Date Promised	|	LineItemPromisedDate	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus deliveryDate="">	|
 | Long Description	|	ns1:ItemDescription	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<Comments xml:lang="">	|
 
-There can be more than one ConfirmationItem.
+There can be more than one ConfirmationItem as a line item on the purchase order.
 
 ### Node.js AXIOS Example
 ```
