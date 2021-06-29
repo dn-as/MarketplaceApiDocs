@@ -33,7 +33,9 @@ cXML Content
 
 cXML file must follow [fulfill.dtd](http://xml.cxml.org/current/Fulfill.zip) standards
 
-More information about fulfill cXML: [Link](https://punchoutcommerce.com/guides/transactions/cxml-confirmation-request/)
+More information about fulfill cXML:
+[https://punchoutcommerce.com/guides/transactions/cxml-confirmation-request/](https://punchoutcommerce.com/guides/transactions/cxml-confirmation-request/)
+[xml.cxml.org/current/cXMLUsersGuide](http://xml.cxml.org/current/cXMLUsersGuide.pdf)
 
 ### Required Parameters
 None
