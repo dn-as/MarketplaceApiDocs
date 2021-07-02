@@ -16,7 +16,7 @@ filename: asn.md
 
 
 
-## API Order Acknowledgment
+## API Advance Ship Notice
 
 Upload data to process an advance shipping notice for a existing purchase order
 
