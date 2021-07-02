@@ -31,7 +31,8 @@ Content-Type: **application/json**
 Authorization: **Bearer *TOKEN*** 
 
 - *TOKEN* is retrieved through authorization API call using vendor account username and password
--  [Auth API Doc](https://punchout-daynite.dnasmarketplace.com/api-docs/)
+-  [Auth Token Guide](auth.md)
+-  [Swagger Auth API Doc](https://punchout-daynite.dnasmarketplace.com/api-docs/)
 
 ### Required Body
 JSON Content
