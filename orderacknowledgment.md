@@ -44,7 +44,7 @@ None
 ```
 <?xml version="1.0"?>
 <!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.014/Fulfill.dtd">
-<cXML payloadID="20210223.50600.1465@dfsupply.com" timestamp="2021-02-23T09:15:50-0600" xml:lang="en-US">
+<cXML payloadID="" timestamp="2021-02-23T09:15:50-0600" xml:lang="en-US">
   <Header>
     <From>
       <Credential domain="DUNS">
