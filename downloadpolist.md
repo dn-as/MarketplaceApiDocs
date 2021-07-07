@@ -105,7 +105,7 @@ axios(config)
 
 ```
 
-### Node.js AXIOS Example
+### Response Example
 ```
 <PoList>
 	<ns1:purchaseOrder DateRequested="2019-10-07" Branch="Y">

@@ -42,92 +42,109 @@ None
 
 ### Sample cXML file content
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cXML SYSTEM "http://xml.cXML.org/schemas/cXML/1.2.046/Fulfill.dtd">
-<cXML payloadID="" xml:lang="en-CA" timestamp="">
-    <Header>
-        <From>
-            <Credential domain="">
-                <Identity></Identity>
-            </Credential>
-        </From>
-        <To>
-            <!-- The buying marketplace and member organization. -->
-            <Credential domain="" type="">
-                <Identity></Identity>
-            </Credential>
-        </To>
-        <Sender>
-            <!-- The supplier -->
-            <Credential domain="">
-                <Identity> </Identity>
-                <SharedSecret> </SharedSecret>
-            </Credential>
-            <UserAgent></UserAgent>
-        </Sender>
-    </Header>
-    <Request deploymentMode="">
-        <ConfirmationRequest>
-            <ConfirmationHeader type="" noticeDate="" invoiceID="">
-                <Total>
-                    <Money currency=""></Money>
-                </Total>
-                <Shipping>
-                    <Money currency=""></Money>
-                    <Description xml:lang=""></Description>
-                </Shipping>
-                <Tax>
-                    <Money currency=""></Money>
-                    <Description xml:lang=""></Description>
-                </Tax>
-                <Contact role="">
-                    <Name xml:lang=""></Name>
-                    <PostalAddress>
-                        <Street></Street>
-                        <City></City>
-                        <State></State>
-                        <PostalCode></PostalCode>
-                        <Country isoCountryCode=""></Country>
-                    </PostalAddress>
-                    <Phone>
-                        <TelephoneNumber>
-                            <CountryCode isoCountryCode=""></CountryCode>
-                            <AreaOrCityCode></AreaOrCityCode>
-                            <Number></Number>
-                        </TelephoneNumber>
-                    </Phone>
-                </Contact>
-                <Comments xml:lang=""></Comments>
-            </ConfirmationHeader>
-            <!-- The orderID and orderDate attributes are not required in the OrderReference element. -->
-            <OrderReference orderID="" orderDate="">
-                <DocumentReference payloadID=""/>
-            </OrderReference>
-            <ConfirmationItem lineNumber="1" quantity="">
-                <UnitOfMeasure> </UnitOfMeasure>
-                <ConfirmationStatus quantity="" type="" shipmentDate="" deliveryDate="">
-                    <UnitOfMeasure> </UnitOfMeasure>
-                    <ItemIn quantity="" lineNumber="">
-                        <ItemID>
-                            <SupplierPartID>YYYX4</SupplierPartID>
-                        </ItemID>
-                        <ItemDetail>
-                            <UnitPrice>
-                                <Money currency="USD"></Money>
-                            </UnitPrice>
-                            <Description xml:lang="en"></Description>
-                            <UnitOfMeasure> </UnitOfMeasure>
-                            <Classification domain=""></Classification>
-                            <ManufacturerPartID></ManufacturerPartID>
-                            <ManufacturerName></ManufacturerName>
-                            <URL></URL>
-                        </ItemDetail>
-                    </ItemIn>
-                    <Comments xml:lang="en-CA"></Comments>
-                </ConfirmationStatus>
-            </ConfirmationItem>
-        </ConfirmationRequest>
-    </Request>
+<?xml version="1.0"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.014/Fulfill.dtd">
+<cXML payloadID="20210223.50600.1465@dfsupply.com" timestamp="2021-02-23T09:15:50-0600" xml:lang="en-US">
+  <Header>
+    <From>
+      <Credential domain="DUNS">
+        <Identity>802661173</Identity>
+      </Credential>
+    </From>
+    <To>
+      <Credential domain="NetworkID">
+        <Identity>daynite</Identity>
+      </Credential>
+    </To>
+    <Sender>
+      <Credential domain="DUNS">
+        <Identity>user@email.com</Identity>
+        <SharedSecret>password123</SharedSecret>
+      </Credential>
+      <UserAgent/>
+    </Sender>
+  </Header>
+  <Request>
+    <ConfirmationRequest>
+      <ConfirmationHeader type="detail" noticeDate="2021-02-23T09:15:50" invoiceID="269765">
+        <Total>
+          <Money currency="USD">1.22</Money>
+        </Total>
+        <Shipping>
+          <Money currency="USD">0.00</Money>
+          <Description xml:lang="en-US">UPS GROUND</Description>
+        </Shipping>
+        <Tax>
+          <Money currency="USD">0.1</Money>
+          <Description xml:lang=""/>
+        </Tax>
+        <Contact role="shipFrom">
+          <Name xml:lang="en-US">NEW JERSEY</Name>
+          <PostalAddress>
+            <Street></Street>
+            <City>Lumberton</City>
+            <State>NJ</State>
+            <PostalCode>08048</PostalCode>
+            <Country isoCountryCode="US">USA</Country>
+          </PostalAddress>
+          <Phone>
+            <TelephoneNumber>
+              <CountryCode isoCountryCode=""/>
+              <AreaOrCityCode/>
+              <Number>800-332-2500</Number>
+            </TelephoneNumber>
+          </Phone>
+        </Contact>
+      </ConfirmationHeader>
+      <OrderReference orderID="269765" orderDate="0021-02-01">
+        <DocumentReference payloadID="user@email.com"/>
+      </OrderReference>
+      <ConfirmationItem quantity="2" lineNumber="1">
+        <UnitOfMeasure>EA</UnitOfMeasure>
+        <ConfirmationStatus quantity="2" type="accept">
+          <UnitOfMeasure>EA</UnitOfMeasure>
+          <ItemIn quantity="2">
+            <ItemID>
+              <SupplierPartID>261950</SupplierPartID>
+            </ItemID>
+            <ItemDetail>
+              <UnitPrice>
+                <Money currency="USD">0.5</Money>
+              </UnitPrice>
+              <Description xml:lang="en-US">NUT</Description>
+              <UnitOfMeasure>EA</UnitOfMeasure>
+              <Classification domain=""/>
+              <ManufacturerPartID>261950</ManufacturerPartID>
+              <ManufacturerName></ManufacturerName>
+              <URL></URL>
+            </ItemDetail>
+          </ItemIn>
+        </ConfirmationStatus>
+      </ConfirmationItem>
+      <ConfirmationItem quantity="2" lineNumber="2">
+        <UnitOfMeasure>EA</UnitOfMeasure>
+        <ConfirmationStatus quantity="2" type="accept">
+          <UnitOfMeasure>EA</UnitOfMeasure>
+          <ItemIn quantity="2">
+            <ItemID>
+              <SupplierPartID>2271092</SupplierPartID>
+            </ItemID>
+            <ItemDetail>
+              <UnitPrice>
+                <Money currency="USD">0.12</Money>
+              </UnitPrice>
+              <Description xml:lang="en-US">SCREW  DOOR HINGE THREAD</Description>
+              <UnitOfMeasure>EA</UnitOfMeasure>
+              <Classification domain=""/>
+              <ManufacturerPartID>2271092</ManufacturerPartID>
+              <ManufacturerName></ManufacturerName>
+              <URL></URL>
+            </ItemDetail>
+          </ItemIn>
+        </ConfirmationStatus>
+      </ConfirmationItem>
+    </ConfirmationRequest>
+  </Request>
 </cXML>
 
 ```
