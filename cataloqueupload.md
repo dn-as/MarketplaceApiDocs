@@ -130,3 +130,28 @@ axios(config)
 |	in_stock		|
 |	product_images		|
 
+### Example Response on successful upload
+```
+{
+    "msg": "File successfuly uploaded.",
+    "result": {
+        "__v": 0,
+        "updatedAt": "2021-07-07T18:22:05.242Z",
+        "createdAt": "2021-07-07T18:22:05.242Z",
+        "vendor_id": "10000-NY",
+        "file_path": "https://marketplacednuat.s3.amazonaws.com/product_files/uploaded_filename.csv",
+        "isImported": 0,
+        "records_uploaded": 1,
+        "isPartialUpload": 0,
+        "created_on": "2021-07-07T18:22:05.241Z",
+        "created_by": "5d0a15938271f823b41f43e9",
+        "modified_on": "2021-07-07T18:22:05.241Z",
+        "modified_by": "5d0a15938271f823b41f43e9",
+        "created_by_name": "username",
+        "vendor_name": "3 WIRE Northern",
+        "_id": "",
+        "id": ""
+    },
+    "status": 200
+}
+```

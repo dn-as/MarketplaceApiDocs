@@ -197,3 +197,65 @@ echo $response;
 
 
 ```
+
+### Response Example
+```
+{
+    "success": true,
+    "message": "ASN mapped successfully",
+    "response": {
+        "status": 200,
+        "message": "ASN items added",
+        "data": [
+            {
+                "success": true,
+                "res": {
+                    "id": 3475,
+                    "quantity": "1",
+                    "seller_part_number": "Test1",
+                    "ship_notice_id": "3591114/0001",
+                    "po_number": "276798",
+                    "po_id": 2087,
+                    "is_latest": 1,
+                    "version": 9,
+                    "is_approved": 0,
+                    "updatedAt": "2021-07-07T18:27:42.000Z",
+                    "createdAt": "2021-07-07T18:27:42.000Z"
+                }
+            },
+            {
+                "success": true,
+                "res": {
+                    "id": 3474,
+                    "quantity": "1",
+                    "seller_part_number": "Test2",
+                    "ship_notice_id": "3591114/0001",
+                    "po_number": "276798",
+                    "po_id": 2087,
+                    "is_latest": 1,
+                    "version": 1,
+                    "is_approved": 0,
+                    "updatedAt": "2021-07-07T18:27:42.000Z",
+                    "createdAt": "2021-07-07T18:27:42.000Z"
+                }
+            },
+            {
+                "success": true,
+                "res": {
+                    "id": 3476,
+                    "quantity": "1",
+                    "seller_part_number": "Test1",
+                    "ship_notice_id": "3591114/0001",
+                    "po_number": "276798",
+                    "po_id": 2087,
+                    "is_latest": 1,
+                    "version": 9,
+                    "is_approved": 0,
+                    "updatedAt": "2021-07-07T18:27:42.000Z",
+                    "createdAt": "2021-07-07T18:27:42.000Z"
+                }
+            }
+        ]
+    }
+}
+```

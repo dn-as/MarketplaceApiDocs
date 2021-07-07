@@ -212,3 +212,81 @@ echo $response;
 
 
 ```
+
+### Response Example
+```
+{
+    "success": true,
+    "message": "OA cXML mapped successfully into DB",
+    "response": {
+        "status": 200,
+        "message": "OA items mapped successfully from OA cXML",
+        "data": [
+            {
+                "success": true,
+                "message": "Po status and Acknowledgement updated",
+                "res": {
+                    "id": 4201,
+                    "ns1:UnitOfMeasure": "EA",
+                    "ns1:BuyerPartNumber": "261950",
+                    "ns1:SellerPartNumber": "261950",
+                    "ns1:PODescription": "NUT",
+                    "ns1:Quantity": "2",
+                    "DatePromised": "",
+                    "LineItemPromisedDate": "",
+                    "ns1:UnitPrice": "0.5",
+                    "ns1:comment": "",
+                    "ns1:PONumber": "269765",
+                    "ns1:PurchaseOrderType": "detail",
+                    "ns1:OrderedBy": "NEW JERSEY",
+                    "ns1:ShipAddressStreet1": "NEW JERSEY",
+                    "ns1:ShipAddressStreet2": "",
+                    "country": "USA",
+                    "ns1:ShipAddressCity": "Lumberton",
+                    "ns1:ShipAddressState": "NJ",
+                    "ns1:ShipAddressPostalCode": "08048",
+                    "DateRequested": "0021-02-01",
+                    "po_id": 755,
+                    "is_latest": 1,
+                    "is_approved": 0,
+                    "version": 20,
+                    "updatedAt": "2021-07-07T18:26:45.000Z",
+                    "createdAt": "2021-07-07T18:26:45.000Z"
+                }
+            },
+            {
+                "success": true,
+                "message": "Po status and Acknowledgement updated",
+                "res": {
+                    "id": 4202,
+                    "ns1:UnitOfMeasure": "EA",
+                    "ns1:BuyerPartNumber": "2271092",
+                    "ns1:SellerPartNumber": "2271092",
+                    "ns1:PODescription": "SCREW  DOOR HINGE THREAD",
+                    "ns1:Quantity": "2",
+                    "DatePromised": "",
+                    "LineItemPromisedDate": "",
+                    "ns1:UnitPrice": "0.12",
+                    "ns1:comment": "",
+                    "ns1:PONumber": "269765",
+                    "ns1:PurchaseOrderType": "detail",
+                    "ns1:OrderedBy": "NEW JERSEY",
+                    "ns1:ShipAddressStreet1": "NEW JERSEY",
+                    "ns1:ShipAddressStreet2": "",
+                    "country": "USA",
+                    "ns1:ShipAddressCity": "Lumberton",
+                    "ns1:ShipAddressState": "NJ",
+                    "ns1:ShipAddressPostalCode": "08048",
+                    "DateRequested": "0021-02-01",
+                    "po_id": 755,
+                    "is_latest": 1,
+                    "is_approved": 0,
+                    "version": 20,
+                    "updatedAt": "2021-07-07T18:26:45.000Z",
+                    "createdAt": "2021-07-07T18:26:45.000Z"
+                }
+            }
+        ]
+    }
+}
+```
