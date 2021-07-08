@@ -44,99 +44,93 @@ None
 ```
 <?xml version="1.0"?>
 <!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.014/Fulfill.dtd">
-<cXML payloadID="" timestamp="2021-02-23T09:15:50-0600" xml:lang="en-US">
+<cXML payloadID="" timestamp="" xml:lang="en-US">
   <Header>
     <From>
-      <Credential domain="DUNS">
-        <Identity>802661173</Identity>
+      <Credential domain="">
+        <Identity></Identity>
       </Credential>
     </From>
     <To>
-      <Credential domain="NetworkID">
-        <Identity>daynite</Identity>
+      <Credential domain="">
+        <Identity></Identity>
       </Credential>
     </To>
     <Sender>
-      <Credential domain="DUNS">
-        <Identity>user@email.com</Identity>
-        <SharedSecret>password123</SharedSecret>
+      <Credential domain="">
+        <Identity>rvallejos@wearetheone.com</Identity>
+        <SharedSecret>f)Raha2g</SharedSecret>
       </Credential>
       <UserAgent/>
     </Sender>
   </Header>
   <Request>
     <ConfirmationRequest>
-      <ConfirmationHeader type="detail" noticeDate="2021-02-23T09:15:50" invoiceID="269765">
-        <Total>
-          <Money currency="USD">1.22</Money>
-        </Total>
-        <Shipping>
-          <Money currency="USD">0.00</Money>
-          <Description xml:lang="en-US">UPS GROUND</Description>
-        </Shipping>
-        <Tax>
-          <Money currency="USD">0.1</Money>
-          <Description xml:lang=""/>
-        </Tax>
-        <Contact role="shipFrom">
-          <Name xml:lang="en-US">NEW JERSEY</Name>
-          <PostalAddress>
-            <Street></Street>
-            <City>Lumberton</City>
-            <State>NJ</State>
-            <PostalCode>08048</PostalCode>
-            <Country isoCountryCode="US">USA</Country>
-          </PostalAddress>
-          <Phone>
-            <TelephoneNumber>
-              <CountryCode isoCountryCode=""/>
-              <AreaOrCityCode/>
-              <Number>800-332-2500</Number>
-            </TelephoneNumber>
-          </Phone>
-        </Contact>
+      <ConfirmationHeader type="detail" noticeDate="2021-07-08T09:15:50" invoiceID="276798">
       </ConfirmationHeader>
-      <OrderReference orderID="269765" orderDate="0021-02-01">
-        <DocumentReference payloadID="user@email.com"/>
+      <OrderReference orderID="276798" orderDate="2012-07-03">
+        <DocumentReference payloadID=""/>
       </OrderReference>
-      <ConfirmationItem quantity="2" lineNumber="1">
-        <UnitOfMeasure>EA</UnitOfMeasure>
-        <ConfirmationStatus quantity="2" type="accept">
+      <ConfirmationItem quantity="" lineNumber="">
+        <UnitOfMeasure></UnitOfMeasure>
+        <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
           <UnitOfMeasure>EA</UnitOfMeasure>
-          <ItemIn quantity="2">
+          <ItemIn quantity="">
             <ItemID>
-              <SupplierPartID>261950</SupplierPartID>
+              <SupplierPartID>Test1</SupplierPartID>
             </ItemID>
             <ItemDetail>
               <UnitPrice>
-                <Money currency="USD">0.5</Money>
+                <Money currency="USD">0.010</Money>
               </UnitPrice>
-              <Description xml:lang="en-US">NUT</Description>
+              <Description xml:lang="en-US">test desc 1</Description>
               <UnitOfMeasure>EA</UnitOfMeasure>
               <Classification domain=""/>
-              <ManufacturerPartID>261950</ManufacturerPartID>
+              <ManufacturerPartID></ManufacturerPartID>
               <ManufacturerName></ManufacturerName>
               <URL></URL>
             </ItemDetail>
           </ItemIn>
         </ConfirmationStatus>
       </ConfirmationItem>
-      <ConfirmationItem quantity="2" lineNumber="2">
+      <ConfirmationItem quantity="" lineNumber="">
         <UnitOfMeasure>EA</UnitOfMeasure>
-        <ConfirmationStatus quantity="2" type="accept">
-          <UnitOfMeasure>EA</UnitOfMeasure>
-          <ItemIn quantity="2">
+        <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
+          <UnitOfMeasure></UnitOfMeasure>
+          <ItemIn quantity="1">
             <ItemID>
-              <SupplierPartID>2271092</SupplierPartID>
+              <SupplierPartID>Test2</SupplierPartID>
             </ItemID>
             <ItemDetail>
               <UnitPrice>
-                <Money currency="USD">0.12</Money>
+                <Money currency="USD">0.020</Money>
               </UnitPrice>
-              <Description xml:lang="en-US">SCREW  DOOR HINGE THREAD</Description>
-              <UnitOfMeasure>EA</UnitOfMeasure>
+              <Description xml:lang="en-US">test desc 2</Description>
+              <UnitOfMeasure></UnitOfMeasure>
               <Classification domain=""/>
-              <ManufacturerPartID>2271092</ManufacturerPartID>
+              <ManufacturerPartID></ManufacturerPartID>
+              <ManufacturerName></ManufacturerName>
+              <URL></URL>
+            </ItemDetail>
+          </ItemIn>
+        </ConfirmationStatus>
+      </ConfirmationItem>
+      <ConfirmationItem quantity="" lineNumber="">
+        <UnitOfMeasure></UnitOfMeasure>
+        <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
+          <UnitOfMeasure></UnitOfMeasure>
+          <ItemIn quantity="1">
+            <ItemID>
+              <SupplierPartID>Test3</SupplierPartID>
+            </ItemID>
+            <ItemDetail>
+              <UnitPrice>
+                <Money currency="USD">0.030</Money>
+              </UnitPrice>
+              <Description xml:lang="en-US">test desc 3</Description>
+              <UnitOfMeasure></UnitOfMeasure>
+              <Classification domain=""/>
+              <ManufacturerPartID></ManufacturerPartID>
               <ManufacturerName></ManufacturerName>
               <URL></URL>
             </ItemDetail>
@@ -159,7 +153,6 @@ Provide your Marketplace login ID in "Sender Identity" field and Marketplace Pas
 | U/M	|	ns1:UnitOfMeasure	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitOfMeasure>	|
 | Price	|	ns1:UnitPrice	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitPrice>\<Money currency="">	|
 | Date Promised	|	LineItemPromisedDate	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus deliveryDate="">	|
-| Long Description	|	ns1:ItemDescription	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<Comments xml:lang="">	|
 
 There can be more than one ConfirmationItem as a line item on the purchase order.
 
