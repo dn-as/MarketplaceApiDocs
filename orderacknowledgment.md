@@ -58,8 +58,8 @@ None
     </To>
     <Sender>
       <Credential domain="">
-        <Identity>rvallejos@wearetheone.com</Identity>
-        <SharedSecret>f)Raha2g</SharedSecret>
+        <Identity>user@email.com</Identity>
+        <SharedSecret>f)password</SharedSecret>
       </Credential>
       <UserAgent/>
     </Sender>
