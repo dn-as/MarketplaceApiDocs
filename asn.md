@@ -31,7 +31,7 @@ Content-Type: **text/xml**
 ### Required Body
 cXML Content
 
-More information about fulfInvoiceDetailill cXML:
+More information about fulfill cXML:
 [xml.cxml.org/current/cXMLUsersGuide](http://xml.cxml.org/current/cXMLUsersGuide.pdf)
 
 ### Required Parameters
