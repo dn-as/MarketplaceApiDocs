@@ -14,7 +14,7 @@ filename: setpostatus.md
 
 ## API set purchase order status
 
-This api will be called by vendors to update the status of a Purchase Order to “Retrieved”. First the vendors needs to call the login api for authentication. They will get an authentication token in login api response. This token will be used in the update PO status API.
+This api endpoint can be called by vendors to update the status of a purchase order to a status from a list of allowed statuses. First the vendors needs to call the login api for authentication. Vendors can get an authentication token from the login api response. This token will be used in the update PO status API call header.
 
 **Request URL**: [https://api-daynite.dnasmarketplace.com/v1/vendor/updatepostatus](https://api-daynite.dnasmarketplace.com/v1/vendor/updatepostatus)
 
@@ -23,6 +23,12 @@ This api will be called by vendors to update the status of a Purchase Order to �
 ### Required Headers
 
 Content-Type: application/json
+
+Authorization: **Bearer *TOKEN*** 
+
+- *TOKEN* is retrieved through authorization API call using vendor account username and password
+-  [Auth Token Guide](auth.md)
+-  [Swagger Auth API Doc](https://punchout-daynite.dnasmarketplace.com/api-docs/)
 
 ### Required Body
 JSON Content
@@ -45,13 +51,7 @@ status: A string value from allowed statuses list for vendors to set, case sensi
 
 ### Required Parameters
 
-Content-Type: **application/json**
-
-Authorization: **Bearer *TOKEN*** 
-
-- *TOKEN* is retrieved through authorization API call using vendor account username and password
--  [Auth Token Guide](auth.md)
--  [Swagger Auth API Doc](https://punchout-daynite.dnasmarketplace.com/api-docs/)
+None
 
 ### PHP Curl Example
 ```
