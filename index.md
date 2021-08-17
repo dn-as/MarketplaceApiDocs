@@ -6,7 +6,7 @@
 
 [Download Purchase Order List XML Format](downloadpolist.md)
 
-[Download Purchase Order List JSON Format](downloadpolistjson.md)
+[Set Purchase Order Status](setpostatus.md)
 
 [Upload Order Acknowledgment](orderacknowledgment.md)
 
