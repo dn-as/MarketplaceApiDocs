@@ -150,16 +150,27 @@ None
 
 Provide your Marketplace login ID in "Sender Identity" field and Marketplace Password in "Shared Secret" field.
 
-Required Fields are work in progress at the moment, updates to come.
 
-<!-- |Marketplace OA Columns| Manual Upload CSV columns|  API upload cXML Elements&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-|--|--|--|
-| Vendor Part	|	ns1:vendornumber	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemID>\<SupplierPartID>	|
-| Quantity	|	ns1:Quantity	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus quantity="" type="">\<ItemIn quantity="1">	|
-| U/M	|	ns1:UnitOfMeasure	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitOfMeasure>	|
-| Price	|	ns1:UnitPrice	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitPrice>\<Money currency="">	|
-| Date Promised	|	LineItemPromisedDate	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus deliveryDate="">	|
-| Long Description	|	ns1:ItemDescription	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<Comments xml:lang="">	| -->
+| Description            | Manual Upload Invoice Columns              | cXML Element                                                                                                                          | Required |
+|------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|----------|
+| invoice number         | invoiceID                                  | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader invoiceID="276798">                                                        | N        |
+| Billing Address        | InvoicePartner:Name                        | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<Name xml:lang="en-US">            | N        |
+|                        | InvoicePartner:Street1                     | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<Street>            | N        |
+|                        | InvoicePartner:Street2                     | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<Street>            | N        |
+|                        | InvoicePartner:City                        | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<City>              | N        |
+|                        | InvoicePartner:State                       | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<State>             | N        |
+|                        | InvoicePartner:PostalCode                  | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<PostalCode>        | N        |
+|                        | InvoicePartner:Country                     | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader>\<InvoicePartner>\<Contact role="remitTo">\<PostalAddress>\<Country>           | N        |
+| invoice date           | invoiceDate                                | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailRequestHeader invoiceDate="2018-05-21T12:00:00">                                         | N        |
+| Day and Nite PO Number | PONumber                                   | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrderInfo>\<OrderReference orderID="246414"/>                                             | Y        |
+| part number            | SellerPartNumber                           | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrder>\<InvoiceDetailItem>\<InvoiceDetailItemReference>\<ItemID>\<SupplierPartID>            | Y        |
+| description            | ItemDescription                            | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrder>\<InvoiceDetailItem>\<InvoiceDetailItemReference>\<ItemID>\<Description xml:lang="en"> | N        |
+| WH                     | InvoiceDetailItem:UnitOfMeasure            | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrder>\<InvoiceDetailItem>\<UnitOfMeasure>                                                 | N        |
+| Ship quantity          | InvoiceDetailItem:quantity                 | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrder>\<InvoiceDetailItem quantity="1.000000">                                            | N        |
+| unit price             | InvoiceDetailItem:UnitPrice                | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailOrder>\<InvoiceDetailItem>\<UnitPrice>\<Money currency="USD">                               | Y        |
+| Total gross            | InvoiceDetailSummary:GrossAmount           | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailSummary>\<GrossAmount>                                                                    | N        |
+| Total freight          | InvoiceDetailSummary:SpecialHandlingAmount | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailSummary>\<SpecialHandlingAmount>                                                          | N        |
+| Total amount           | InvoiceDetailSummary:NetAmount             | \<Request>\<InvoiceDetailRequest>\<InvoiceDetailSummary>\<NetAmount>                                                                      | Y        |
 
 There can be more than one ShipNoticeItem as a line item on the purchase order.
 
