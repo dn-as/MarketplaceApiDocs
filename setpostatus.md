@@ -14,7 +14,7 @@ filename: setpostatus.md
 
 ## API set purchase order status
 
-This api endpoint can be called by vendors to update the status of a purchase order to a status from a list of allowed statuses. First the vendors needs to call the login api for authentication. Vendors can get an authentication token from the login api response. This token will be used in the update PO status API call header.
+This api endpoint can be called by vendors to update the status of a purchase order to a status from a list of allowed statuses. Vendors needs to call the login api for authentication token. Vendors can get an authentication token from the login api response. This token will be used in the update PO status API call header.
 
 **Request URL**: [https://api-daynite.dnasmarketplace.com/v1/vendor/updatepostatus](https://api-daynite.dnasmarketplace.com/v1/vendor/updatepostatus)
 
