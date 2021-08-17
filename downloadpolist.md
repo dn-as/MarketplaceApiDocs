@@ -37,10 +37,21 @@ Authorization: **Bearer *TOKEN***
 ### Required Body
 JSON Content
 
+status: A string value from allowed statuses list for vendors to filter by, case sensitive.
+
+| Status <img width=200/>| Description |
+|--|--|
+| Pending  | When a PO is received from our ERP, it is in pending status. Vendors cannot see the ending POs until Procurement team forwards the POs to them. |
+| Pending Confirmation | When the PO sent to Vendor by Procurement team it becomes Pending Confirmation and vendor can see the PO in web portal |
+| Retrieved | Vendor has set the status to retrieved via API |
+| Accepted  | Vendor has the option in web portal to Accept the PO. He can also accept by uploading OA. |
+| Rejected  | If a vendor rejects the PO the status changes to Rejected. |
+| Exported  | When the procurement team sends the OA to the our ERP, PO becomes Exported |
+
+
 ```
 {
-    "status":"",
-    "created_on":""
+    "status":""
 }
 ```
 ### Required Parameters
@@ -116,6 +127,13 @@ axios(config)
 		<ns1:PurchaseOrderType>Purchase</ns1:PurchaseOrderType>
 		<ns1:OrderedBy>Marketplace</ns1:OrderedBy>
 		<ns1:comment />
+		<ns1:AdditionalInfo>
+			<ns1:PrcorementPersonnelName> </ns1:PrcorementPersonnelName>
+			<ns1:PrcorementPersonnelEmail> </ns1:PrcorementPersonnelEmail>
+			<ns1:ShipNoticeId> </ns1:ShipNoticeId>
+			<ns1:ShipViaId> </ns1:ShipViaId>
+			<ns1:ShipViaDescription> </ns1: ShipViaDescription >
+		</ns1: AdditionalInfo >
 		<ns1:shipTo country="US">
 			<ns1:ShipAddressStreet1>DAY &amp; NITE REFRIGERATION</ns1:ShipAddressStreet1>
 			<ns1:ShipAddressStreet2>10 CHARLES STREET</ns1:ShipAddressStreet2>
