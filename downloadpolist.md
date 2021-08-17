@@ -51,7 +51,7 @@ status: A string value from allowed statuses list for vendors to filter by, case
 
 ```
 {
-    "status":""
+    "status":"Retrieved"
 }
 ```
 ### Required Parameters
