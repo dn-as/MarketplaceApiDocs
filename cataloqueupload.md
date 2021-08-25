@@ -104,31 +104,31 @@ axios(config)
 
 [Sample File](https://dn-as.github.io/MarketplaceApiDocs/product_sample_file.csv)
  
-| Column name 	|
-|--						|
-|	product_name							|
-|	manufacturer_name					|
-|	manufacturer_part_number		|
-|	vendor_part_number				|
-|	quantity_on_hand						|
-|	list_price		|
-|	discounted_price		|
-|	lead_time		|
-|	fits_models		|
-|	specifications		|
-|	long_description		|
-|	uom_name		|
-|	uom_quantity		|
-|	web_link		|
-|	url_image		|
-|	minimum_ship_quantity		|
-|	coo		|
-|	coo_name		|
-|	segment		|
-|	family		|
-|	unspsc		|
-|	in_stock		|
-|	product_images		|
+| Column name | Required |
+|-- |--|
+| product_name | Y |
+| manufacturer_name | N |
+| manufacturer_part_number | N |
+| vendor_part_number | Y |
+| quantity_on_hand | N |
+| list_price | N |
+| discounted_price | N |
+| lead_time | N |
+| fits_models | N |
+| specifications | N |
+| long_description | N |
+| uom_name | N |
+| uom_quantity | N |
+| web_link | N |
+| url_image | N |
+| minimum_ship_quantity | N |
+| coo | N |
+| coo_name | N |
+| segment | N |
+| family | N |
+| unspsc | N |
+| in_stock | N |
+| product_images | N |
 
 ### Example Response on successful upload
 ```
