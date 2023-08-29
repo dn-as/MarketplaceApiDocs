@@ -81,7 +81,7 @@ None
             <ShipControl>
 				<CarrierIdentifier domain="">UPSN</CarrierIdentifier>
 				<CarrierIdentifier domain="companyName">United Parcel Service</CarrierIdentifier>
-				<ShipmentIdentifier>1Z123456789</ShipmentIdentifier> 
+				<ShipmentIdentifier>1Z123456789</ShipmentIdentifier> <!-- Primary tracking number-->
 			</ShipControl>
 			
             <ShipNoticePortion>
