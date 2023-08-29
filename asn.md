@@ -113,16 +113,16 @@ None
 
 Provide your Marketplace login ID in "Sender Identity" field and Marketplace Password in "Shared Secret" field.
 
-Required Fields are work in progress at the moment, updates to come.
+| Element  | Path |  Note | 
+| ------------- | ------------- | ------------- |
+|	ShipNoticeHeader	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipNoticeHeader shipmentID="" operation="new" noticeDate="" shipmentDate="" deliveryDate="">```|	operation = new, always set to new, must be set. All other fields are optional	|
+|	ShipmentIdentifier	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipControl><ShipmentIdentifier>1Z6254550331092222</ShipmentIdentifier>```|	Tracking Number for package	|
+|	OrderReference	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipNoticePortion><OrderReference orderID="313668" orderDate="">```|	orderID must be filled in with Sampro PO Number	|
+|	ShipNoticeItem	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipNoticePortion><ShipNoticeItem quantity="1" lineNumber="">```|	Can have mutiple ShipNoticeItem elements, quantity is required	|
+|	ItemID	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipNoticePortion><ShipNoticeItem quantity="1" lineNumber=""><ItemID>```|	Item Id is vendor part number from PO	|
+|	UnitOfMeasure	|```<cXML payloadID="" timestamp=""><Request><ShipNoticeRequest><ShipNoticePortion><ShipNoticeItem quantity="1" lineNumber=""><UnitOfMeasure>```|	UnitOfMeasure is UOM from PO	|
 
-<!-- |Marketplace OA Columns| Manual Upload CSV columns|  API upload cXML Elements&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-|--|--|--|
-| Vendor Part	|	ns1:vendornumber	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemID>\<SupplierPartID>	|
-| Quantity	|	ns1:Quantity	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus quantity="" type="">\<ItemIn quantity="1">	|
-| U/M	|	ns1:UnitOfMeasure	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitOfMeasure>	|
-| Price	|	ns1:UnitPrice	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<ItemIn>\<ItemDetail>\<UnitPrice>\<Money currency="">	|
-| Date Promised	|	LineItemPromisedDate	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus deliveryDate="">	|
-| Long Description	|	ns1:ItemDescription	|	\<cXML>\<Request>\<ConfirmationRequest>\<ConfirmationItem>\<ConfirmationStatus>\<Comments xml:lang="">	| -->
+
 
 There can be more than one ShipNoticeItem as a line item on the purchase order.
 
