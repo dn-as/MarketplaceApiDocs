@@ -16,7 +16,7 @@ filename: invoice.md
 
 
 
-## API Advance Ship Notice
+## API Invoice
 
 Upload data to process an invoice for a existing purchase order
 
