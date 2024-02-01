@@ -14,3 +14,4 @@
 
 [Invoice](invoice.md)
 
+[Vendor PO Receiving Endpoint](vendorreceivingpo.md)
