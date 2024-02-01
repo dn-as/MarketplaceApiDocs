@@ -119,11 +119,6 @@ Vendors can setup to receiving purchase order (PO) data via API to their designa
 </root>
 </xml>
 
-
-SenderDomainTEST - not found
-SenderIdentityTEST - not found 
-UOMTEST - not found
-UNSPCTEST -  found found
 ```
 
 
