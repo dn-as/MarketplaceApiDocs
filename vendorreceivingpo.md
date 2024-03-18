@@ -4,7 +4,7 @@
 Vendors can setup to receiving purchase order (PO) data via API to their designated API endpoint. Below is information on how to configure your account and what the data will look like when receiving a PO.
 
 ### Vendor Account Configuration to send to API endpoint
-![alt text](https://ucarecdn.com/498ada70-8d8c-4831-a14f-1c61339f39c0/vendorporeceivingapiconfig.png "Logo Title Text 1")
+![alt text](https://github.com/dn-as/MarketplaceApiDocs/blob/c7562a0c9dd3ba6b6703b1a240c6c2f376784ce4/vendor%20po%20receiving%20api%20config.png  "Logo Title Text 1")
 
 | Field  | Description | Required |
 | ------------ | ------------ | ------------ |
