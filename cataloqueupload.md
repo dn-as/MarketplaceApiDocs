@@ -104,31 +104,33 @@ axios(config)
 
 [Sample File](https://dn-as.github.io/MarketplaceApiDocs/product_sample_file.csv)
  
-| Column name | Required |
-|-- |--|
-| product_name | Y |
-| manufacturer_name | N |
-| manufacturer_part_number | N |
-| vendor_part_number | Y |
-| quantity_on_hand | N |
-| list_price | N |
-| discounted_price | N |
-| lead_time | N |
-| fits_models | N |
-| specifications | N |
-| long_description | N |
-| uom_name | N |
-| uom_quantity | N |
-| web_link | N |
-| url_image | N |
-| minimum_ship_quantity | N |
-| coo | N |
-| coo_name | N |
-| segment | N |
-| family | N |
-| unspsc | N |
-| in_stock | N |
-| product_images | N |
+| Column Name                | Description                                                                 | Mandatory | Max Length | Business Rules/Validations                       |
+|---------------------------|-----------------------------------------------------------------------------|-----------|------------|-------------------------------------------------|
+| Product Name              | Name                                                                       | Yes       | 100        | Alpha Numeric                                   |
+| Manufacturer Name         | Original Equipment Manufacturer (Standard Special Characters Set not allowed.)| Yes       | 100        | Alpha Numeric                                   |
+| Manufacturer Part Number  | OEM Part #                                                                 | Yes       | 30         | Alpha Numeric                                   |
+| Vendor Part Number        | Vendor Material Part Number                                                | Yes       | 30         | Alpha Numeric                                   |
+| Quantity on Hand          | Total number of quantity available                                         | No        | 10         | Number                                          |
+| List Price                | Original List Price                                                        | No        | 20         | Number                                          |
+| Discounted Price          | Contract Price                                                             | No        | 20         | Number                                          |
+| Lead Time                 | Number of Days required to Pack and Ship the product                       | No        | 2          | Number                                          |
+| Product Images            | Product Image URL. (Multiple Image URL can be uploaded with a ';' in between)| No        | NA         | Max 4 images will be allowed                    |
+| Fits Models               | Fits which model(s)                                                        | Yes       | NA         | Alpha Numeric                                   |
+| Specifications            | Short Description                                                          | No        | NA         | Alpha Numeric                                   |
+| Long Description          | Long Description                                                           | No        | NA         | Alpha Numeric                                   |
+| UOM Name                  | Unit of measurement name                                                   | No        | NA         | Alpha Numeric                                   |
+| UOM Quantity              | Unit of measurement quantity                                               | No        | NA         | Number                                          |
+| Web link                  | URL link to Vendor Web Page                                                | No        | NA         | Alpha Numeric                                   |
+| URL Image                 | Thumbnail URL                                                              | No        | NA         | Alpha Numeric                                   |
+| Minimum Ship Quantity     | Minimum Ship Quantity                                                      | No        | NA         | Number                                          |
+| COO                       | Country of Origin                                                          | No        | NA         | Alpha Numeric                                   |
+| COO Name                  | Country of Origin Name                                                     | No        | NA         | Alpha Numeric                                   |
+| Segment                   | Product Segment Name                                                       | No        | NA         | Alpha Numeric                                   |
+| Family                    | Product Family Name                                                        | No        | NA         | Alpha Numeric                                   |
+| UNSPSC                    | United Nations Standard Products and Services Code (UNSPSC) for use in eCommerce| No     | NA         | Number                                          |
+| In Stock                  | In Stock                                                                   | No        | NA         | Number                                          |
+| Missing Field             | Missing Description                                                        | No        | NA         | Number                                          |
+
 
 ### Example Response on successful upload
 ```
