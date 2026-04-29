@@ -72,7 +72,6 @@ None
         <DocumentReference payloadID=""/>
       </OrderReference>
       <ConfirmationItem quantity="" lineNumber="">
-        <UnitOfMeasure></UnitOfMeasure>
         <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
           <UnitOfMeasure>EA</UnitOfMeasure>
           <ItemIn quantity="">
@@ -84,7 +83,6 @@ None
                 <Money currency="USD">0.010</Money>
               </UnitPrice>
               <Description xml:lang="en-US">test desc 1</Description>
-              <UnitOfMeasure>EA</UnitOfMeasure>
               <Classification domain=""/>
               <ManufacturerPartID></ManufacturerPartID>
               <ManufacturerName></ManufacturerName>
@@ -94,7 +92,6 @@ None
         </ConfirmationStatus>
       </ConfirmationItem>
       <ConfirmationItem quantity="" lineNumber="">
-        <UnitOfMeasure>EA</UnitOfMeasure>
         <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
           <UnitOfMeasure></UnitOfMeasure>
           <ItemIn quantity="1">
@@ -106,7 +103,6 @@ None
                 <Money currency="USD">0.020</Money>
               </UnitPrice>
               <Description xml:lang="en-US">test desc 2</Description>
-              <UnitOfMeasure></UnitOfMeasure>
               <Classification domain=""/>
               <ManufacturerPartID></ManufacturerPartID>
               <ManufacturerName></ManufacturerName>
@@ -116,7 +112,6 @@ None
         </ConfirmationStatus>
       </ConfirmationItem>
       <ConfirmationItem quantity="" lineNumber="">
-        <UnitOfMeasure></UnitOfMeasure>
         <ConfirmationStatus quantity="1" type="accept"  shipmentDate="" deliveryDate="2012-07-03T18:41:29-08:00" >
           <UnitOfMeasure></UnitOfMeasure>
           <ItemIn quantity="1">
@@ -128,7 +123,6 @@ None
                 <Money currency="USD">0.030</Money>
               </UnitPrice>
               <Description xml:lang="en-US">test desc 3</Description>
-              <UnitOfMeasure></UnitOfMeasure>
               <Classification domain=""/>
               <ManufacturerPartID></ManufacturerPartID>
               <ManufacturerName></ManufacturerName>
